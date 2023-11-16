@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca2.HelloController">
+   <children>
+      <Button layoutX="48.0" layoutY="67.0" mnemonicParsing="false" prefWidth="102.0" text="GamesMachines" />
+      <Label fx:id="exitText" />
+      <Button layoutX="282.0" layoutY="323.0" mnemonicParsing="false" onAction="#onExitClicked" text="Exit" />
+      <Button layoutX="274.0" layoutY="67.0" mnemonicParsing="false" onAction="#onGamesClicked" text="Games" />
+      <Button layoutX="469.0" layoutY="67.0" mnemonicParsing="false" text="GamePorts" />
+   </children>
+</AnchorPane>
