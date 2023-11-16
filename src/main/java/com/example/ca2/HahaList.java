@@ -21,7 +21,7 @@ public class HahaList<H> {
     //Add other insertion, deletion, access, search, etc. methods too
 //Inner class approach.
     class HahaNode<N> {
-        public HahaNode<H> next = null;
+        public HahaNode<N> next = null;
         private N contents; //ADT reference!
 
         public N getContents() {
