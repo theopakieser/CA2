@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="GamesMachine class, Game class and GamePort class">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/game-menu.fxml" afterDir="false" />
+    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="buttons &lt;3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/game-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/game-menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,9 @@
       <updated>1699888235694</updated>
       <workItem from="1699888236979" duration="1617000" />
       <workItem from="1700043974452" duration="10000" />
-      <workItem from="1700150438158" duration="5864000" />
+      <workItem from="1700150438158" duration="5935000" />
+      <workItem from="1700571767837" duration="2115000" />
+      <workItem from="1700665837215" duration="403000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700153360275</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="buttons &lt;3">
+      <created>1700156345381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156345381</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +128,7 @@
     <MESSAGE value="hahaList, understand generic list now (kind of)" />
     <MESSAGE value="GamesMachine class, GamesMachine class and GamePort class" />
     <MESSAGE value="GamesMachine class, Game class and GamePort class" />
-    <option name="LAST_COMMIT_MESSAGE" value="GamesMachine class, Game class and GamePort class" />
+    <MESSAGE value="buttons &lt;3" />
+    <option name="LAST_COMMIT_MESSAGE" value="buttons &lt;3" />
   </component>
 </project>

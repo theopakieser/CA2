@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.ca2.HelloController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca2.HelloController">
+   <children>
+      <Button layoutX="45.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBackClicked" text="Back" />
+      <Button layoutX="231.0" layoutY="125.0" mnemonicParsing="false" onAction="#onAddClicked" text="Add" />
+   </children>
 </AnchorPane>

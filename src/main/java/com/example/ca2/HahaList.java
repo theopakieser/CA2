@@ -16,7 +16,9 @@ public class HahaList<H> {
         head = null;
     }
 
-
+    public void deleteElement(H e){
+        HahaNode<H> hn = new HahaNode<>();
+        hn.setContents(e);}
 
     //Add other insertion, deletion, access, search, etc. methods too
 //Inner class approach.

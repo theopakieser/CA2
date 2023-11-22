@@ -28,12 +28,28 @@ public class HelloController {
 
     @FXML
     protected void onGamesClicked() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game-menu.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 640, 480);
         Stage stage = new Stage();
         stage.setTitle("The Game Menu!");
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    protected void onBackClicked() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 640, 480);
+        Stage stage = new Stage();
+        stage.setTitle("The Game Menu!");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    protected void onAddClicked() throws IOException {
+       HelloApplication.games.addElement(new Game("q", "w", "w", "w", null,12, "q" ));
+       System.out.println(HelloApplication.games.head);
     }
 
 }
