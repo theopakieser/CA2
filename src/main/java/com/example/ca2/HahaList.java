@@ -34,6 +34,10 @@ public class HahaList<H> {
             contents = c;
         }
 
+        @Override
+        public String toString() {
+            return contents + " \n";
+        }
     }
 }
 

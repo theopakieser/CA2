@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="buttons &lt;3">
+    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="back button working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/GamesMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/GamesMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/game-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/game-menu.fxml" afterDir="false" />
     </list>
@@ -77,6 +78,8 @@
       <workItem from="1700150438158" duration="5935000" />
       <workItem from="1700571767837" duration="2115000" />
       <workItem from="1700665837215" duration="403000" />
+      <workItem from="1700666262568" duration="154000" />
+      <workItem from="1700741750174" duration="6293000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -106,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700156345381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="back button working">
+      <created>1700666411174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700666411174</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +139,7 @@
     <MESSAGE value="GamesMachine class, GamesMachine class and GamePort class" />
     <MESSAGE value="GamesMachine class, Game class and GamePort class" />
     <MESSAGE value="buttons &lt;3" />
-    <option name="LAST_COMMIT_MESSAGE" value="buttons &lt;3" />
+    <MESSAGE value="back button working" />
+    <option name="LAST_COMMIT_MESSAGE" value="back button working" />
   </component>
 </project>

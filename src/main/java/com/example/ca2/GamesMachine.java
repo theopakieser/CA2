@@ -8,6 +8,8 @@ private int yearOfRelease;
 private String type;
 private String media;
 private int initialPrice;
+
+
     private String url;
 
     HahaList<GamesMachine> gamesMachines=new HahaList<>();
@@ -86,6 +88,7 @@ private int initialPrice;
         this.initialPrice = initialPrice;
         this.url = url;
     }
+
 
 
     @Override

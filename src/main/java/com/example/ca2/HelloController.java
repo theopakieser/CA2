@@ -5,9 +5,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.application.Platform;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import com.example.ca2.Game;
 
 public class HelloController {
     @FXML
@@ -46,9 +48,32 @@ public class HelloController {
         stage.show();
     }
 
+    public TextField name, publisher, description, developer, url;
+
+    public GamesMachine originalMachine;
+    public int yearOfRelease;
+
+    public GamesMachine getOriginalMachine() {
+        return originalMachine;
+    }
+
+    public void setOriginalMachine(GamesMachine originalMachine) {
+        this.originalMachine = originalMachine;
+    }
+
+    public int getYearOfRelease() {
+        return yearOfRelease;
+    }
+
+    public void setYearOfRelease(int yearOfRelease) {
+        this.yearOfRelease = yearOfRelease;
+    }
+
+
+
     @FXML
     protected void onAddClicked() throws IOException {
-       HelloApplication.games.addElement(new Game("q", "w", "w", "w", null,12, "q" ));
+       HelloApplication.games.addElement(new Game(name.getText(), publisher.getText(), description.getText(), developer.getText(), originalMachine, yearOfRelease, url.getText()));
        System.out.println(HelloApplication.games.head);
     }
 
