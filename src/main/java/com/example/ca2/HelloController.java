@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.application.Platform;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.scene.control.ListView;
 
 import java.io.IOException;
 import com.example.ca2.Game;
@@ -39,6 +40,15 @@ public class HelloController {
     }
 
     @FXML
+    protected void onGamesMachineClicked() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("gamesMachine-menu.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 640, 480);
+        Stage stage = new Stage();
+        stage.setTitle("The Game Menu!");
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
     protected void onBackClicked() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 640, 480);
@@ -48,33 +58,38 @@ public class HelloController {
         stage.show();
     }
 
-    public TextField name, publisher, description, developer, url;
+    public TextField name;
+    public  TextField publisher;
+    public  TextField description;
+    public  TextField developer;
+    public  TextField url;
 
     public GamesMachine originalMachine;
-    public int yearOfRelease;
+    public TextField yearOfRelease;
 
-    public GamesMachine getOriginalMachine() {
-        return originalMachine;
-    }
+    public TextField manufacturer;
+    public TextField media;
+    public TextField initialPrice;
+    public TextField type;
 
-    public void setOriginalMachine(GamesMachine originalMachine) {
-        this.originalMachine = originalMachine;
-    }
 
-    public int getYearOfRelease() {
-        return yearOfRelease;
-    }
-
-    public void setYearOfRelease(int yearOfRelease) {
-        this.yearOfRelease = yearOfRelease;
-    }
 
 
 
     @FXML
-    protected void onAddClicked() throws IOException {
-       HelloApplication.games.addElement(new Game(name.getText(), publisher.getText(), description.getText(), developer.getText(), originalMachine, yearOfRelease, url.getText()));
+    protected void onAddGameClicked() throws IOException {
+       HelloApplication.games.addElement(new Game(name.getText(), publisher.getText(), description.getText(), developer.getText(), originalMachine, yearOfRelease.getLength(), url.getText()));
        System.out.println(HelloApplication.games.head);
+    }
+
+    @FXML
+    protected void onAddGameMachineClicked() throws IOException {
+        HelloApplication.gameMachines.addElement(new GamesMachine(name.getText(), description.getText(), manufacturer.getText(), yearOfRelease.getLength(), type.getText(), media.getText(), initialPrice.getLength(), url.getText()));
+        System.out.println(HelloApplication.gameMachines.head);
+    }
+
+    protected void onViewGameMachineClicked() throws IOException{
+        HelloApplication.gameMachines.head.toString();
     }
 
 }
