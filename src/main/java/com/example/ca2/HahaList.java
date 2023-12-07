@@ -50,6 +50,17 @@ public void SelectElement(){
 //
 //    }
 
+public void editElement(GamesMachine editGameMachine){
+    HahaList<GamesMachine>.HahaNode<GamesMachine> temp = HelloApplication.gameMachines.head;
+    while(temp !=null) {
+        if (temp.getContents().getName().equals(editGameMachine.getName())) {
+            temp.setContents(editGameMachine);
+        } else {
+            temp = temp.next;
+        }
+    }
+}
+
 
 
 
