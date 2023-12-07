@@ -1,6 +1,5 @@
 package com.example.ca2;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -89,30 +88,8 @@ public class HelloController {
         System.out.println(HelloApplication.gameMachines.head);
     }
 
-
-
-    public void onViewAllGameMachineClicked() throws IOException {
-        HelloApplication.gameMachines.listElements();
+    protected void onViewGameMachineClicked() throws IOException{
+        HelloApplication.gameMachines.head.toString();
     }
 
-//    // Create UI components
-//    public TextField nodeName;
-//    Button deleteButton = new Button("Delete Node");
-//        deleteButton.setOnAction(event -> deleteNode());
-//
-//
-//
-//    // Create the scene and set it on the stage
-//
-//
-//    private void deleteNode() {
-//        // Get the node name from the TextField
-//        String nodeName = nodeNameTextField.getText();
-//
-//        // Call the delete method with the node name
-//        gameList.deleteByName(nodeName);
-//
-//        // Update the UI or print some result
-//        System.out.println("Node with name '" + nodeName + "' deleted.");
-//}
 }
