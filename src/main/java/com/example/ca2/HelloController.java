@@ -97,7 +97,7 @@ public class HelloController {
     @FXML
     protected void onViewGameMachineClicked() throws IOException{
         HahaList.HahaNode temp = HelloApplication.gameMachines.head;
-        StringBuilder ports = new StringBuilder(); //creates a stringbuilder to loop the text
+        StringBuilder ports = new StringBuilder(); //creates a stringbuilder to loop the text - https://www.geeksforgeeks.org/stringbuilder-class-in-java-with-examples/
         while (temp != null) {
             ports.append(temp.toString()).append("\n"); // append makes the Stringbuilder exist via toString then uses the \n to new line after each
             temp = temp.next;
