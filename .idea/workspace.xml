@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="fx interface for add">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/gamesMachine-menu.fxml" afterDir="false" />
+    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="imported a textfield class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +39,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2/src/main/resources/com"
+    "last_directory_selection": "C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2/src/main/resources/com",
+    "last_opened_file_path": "C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2.1/CA2"
   }
 }]]></component>
   <component name="RunManager">
@@ -56,6 +53,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -87,6 +95,11 @@
       <workItem from="1701275112507" duration="58000" />
       <workItem from="1701275180988" duration="1846000" />
       <workItem from="1701329199047" duration="9585000" />
+      <workItem from="1701954227772" duration="91000" />
+      <workItem from="1701954467693" duration="24000" />
+      <workItem from="1701963412196" duration="652000" />
+      <workItem from="1701964325264" duration="42000" />
+      <workItem from="1701964508482" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -144,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701330139627</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="imported a textfield class">
+      <created>1701954290273</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701954290273</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +190,7 @@
     <MESSAGE value="back button working" />
     <MESSAGE value="add" />
     <MESSAGE value="fx interface for add" />
-    <option name="LAST_COMMIT_MESSAGE" value="fx interface for add" />
+    <MESSAGE value="imported a textfield class" />
+    <option name="LAST_COMMIT_MESSAGE" value="imported a textfield class" />
   </component>
 </project>

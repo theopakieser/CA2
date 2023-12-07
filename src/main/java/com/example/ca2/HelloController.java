@@ -79,6 +79,7 @@ public class HelloController {
 
     @FXML
     protected void onAddGameClicked() throws IOException {
+        //TODO figure out how to change original game machine to a string
        HelloApplication.games.addElement(new Game(name.getText(), publisher.getText(), description.getText(), developer.getText(), originalMachine, yearOfRelease.getLength(), url.getText()));
        System.out.println(HelloApplication.games.head);
     }
