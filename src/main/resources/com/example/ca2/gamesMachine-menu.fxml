@@ -9,6 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.TextArea?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca2.HelloController">
     <children>
         <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
@@ -30,7 +31,7 @@
                                         <Font size="18.0" />
                                     </font>
                                 </Text>
-                        <TextField fx:id="url" layoutX="34.0" layoutY="239.0" promptText="Enter Initial Price" />
+                        <TextField fx:id="url" layoutX="34.0" layoutY="239.0" promptText="Enter Url        " />
                             </children>
                         </AnchorPane>
                     </content>
@@ -49,7 +50,8 @@
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ListView layoutX="23.0" layoutY="22.0" prefHeight="200.0" prefWidth="200.0" />
+                         <TextArea fx:id="myGameMachines" layoutX="15.0" prefHeight="274.0" prefWidth="541.0" />
+                         <Button layoutX="250.0" layoutY="288.0" mnemonicParsing="false" onAction="#onViewGameMachineClicked" text="View Ports" />
                      </children></AnchorPane>
                     </content>
                 </Tab>

@@ -84,12 +84,25 @@ public class HelloController {
 
     @FXML
     protected void onAddGameMachineClicked() throws IOException {
-        HelloApplication.gameMachines.addElement(new GamesMachine(name.getText(), description.getText(), manufacturer.getText(), yearOfRelease.getLength(), type.getText(), media.getText(), initialPrice.getLength(), url.getText()));
+        String yearOfReleasage = yearOfRelease.getText(); //TextField text is turned into a String
+        int yearOfRelease = Integer.parseInt(yearOfReleasage); // parseInt takes the numbers and turns them to an int
+        String initialPricage = initialPrice.getText(); //TextField text is turned into a String
+        int initialPrice = Integer.parseInt(initialPricage); // parseInt takes the numbers and turns them to an int
+        HelloApplication.gameMachines.addElement(new GamesMachine(name.getText(), description.getText(), manufacturer.getText(), yearOfRelease, type.getText(), media.getText(), initialPrice, url.getText()));
         System.out.println(HelloApplication.gameMachines.head);
     }
 
+    @FXML
+    private TextArea myGameMachines;
+    @FXML
     protected void onViewGameMachineClicked() throws IOException{
-        HelloApplication.gameMachines.head.toString();
+        HahaList.HahaNode temp = HelloApplication.gameMachines.head;
+        StringBuilder ports = new StringBuilder(); //creates a stringbuilder to loop the text
+        while (temp != null) {
+            ports.append(temp.toString()).append("\n"); // append makes the Stringbuilder exist via toString then uses the \n to new line after each
+            temp = temp.next;
+        }
+        myGameMachines.setText(ports.toString());
     }
 
 }
