@@ -106,4 +106,15 @@ public class HelloController {
         myGameMachines.setText(ports.toString());
     }
 
+    @FXML
+    protected void onEditGameMachineClicked() throws IOException{
+        String yearOfReleasage = yearOfRelease.getText();
+        String initialPricage = initialPrice.getText();
+        int InitialPricage = Integer.parseInt(initialPricage);
+        int YearOfReleasage = Integer.parseInt(yearOfReleasage);
+        GamesMachine editedGameMachine = new GamesMachine(name.getText(), description.getText(), manufacturer.getText(), YearOfReleasage, type.getText(), media.getText(), InitialPricage, url.getText());
+        HelloApplication.gameMachines.editElement(editedGameMachine);
+        System.out.println(editedGameMachine.toString());
+    }
+
 }
