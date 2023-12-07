@@ -50,6 +50,7 @@
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <ListView layoutX="23.0" layoutY="22.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Button layoutX="274.0" layoutY="236.0" mnemonicParsing="false" onAction="#onViewAllGameMachineClicked" text="View All" />
                      </children></AnchorPane>
                     </content>
                 </Tab>

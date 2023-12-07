@@ -10,15 +10,55 @@ public class HahaList<H> {
         head = hn;
     }
 
+    public void listElements() {
+        HahaNode<H> temp;
+         temp=head;
+        while(temp!=null) {
+//Process node referenced by temp
+            System.out.println(temp);
+            temp = temp.next;
+        }
+    }
+
+public void SelectElement(){
+
+}
+
+//    public void deleteElement(){
+//        if(head ==null){
+//            return;
+//        }
+//        (head.getContents()) {
+//            head = head.next;
+//            return;
+//        }
+//    }
+
+//    public void delElement(H e){
+//        HahaNode<H> hn = new HahaNode<>();
+//        hn.setContents(e);
+//        if(hn.getContents())
+//        hn.next = head;
+//        head = hn;
+//            intCode = Utils.readNextInt("Enter International Code: ");
+//            PortNode temp = portHead;
+//            while (temp != null && temp.getIntCode() != intCode)
+//                temp = temp.nextPort;
+//            if (temp != null)
+//                return temp;
+//
+//
+//    }
+
+
+
+
 
 
     public void clear() { //Empty list
         head = null;
     }
 
-    public void deleteElement(H e){
-        HahaNode<H> hn = new HahaNode<>();
-        hn.setContents(e);}
 
     //Add other insertion, deletion, access, search, etc. methods too
 //Inner class approach.

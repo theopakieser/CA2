@@ -7,13 +7,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 public class HelloApplication extends Application {
 
     static HahaList<Game> games = new HahaList<>();
     static HahaList<GamesMachine> gameMachines = new HahaList<>();
+    static HahaHashCuckoo<Game> gameHahaHashCuckoo = new HahaHashCuckoo<>(20);
 
-        @Override
+
+    @Override
         public void start (Stage stage) throws IOException {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("menu.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 640, 480);
@@ -23,6 +26,7 @@ public class HelloApplication extends Application {
         }
 
         public static void main (String[]args){
+            gameHahaHashCuckoo.displayHashTable();
             launch();
         }
     }

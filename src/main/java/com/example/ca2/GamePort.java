@@ -6,9 +6,8 @@ public class GamePort {
     private String developer;
     private int yearOfRelease;
     private String url;
+
     HahaList<GamePort> gamePorts=new HahaList<>();
-
-
 
     public Game getOriginalGame() {
         return originalGame;
@@ -59,15 +58,18 @@ public class GamePort {
         this.yearOfRelease = yearOfRelease;
         this.url = url;
     }
+   public String name = originalGame.getName();
 
     @Override
     public String toString() {
+
         return "GamePort{" +
                 "originalGame=" + originalGame +
                 ", newMachine=" + newMachine +
                 ", developer='" + developer + '\'' +
                 ", yearOfRelease=" + yearOfRelease +
                 ", url='" + url + '\'' +
+                ", name=" + name +
                 '}';
     }
 }
