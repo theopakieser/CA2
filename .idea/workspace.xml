@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="imported a textfield class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HashTableLP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaHashCuckoo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -27,22 +29,30 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Y7t1iIzEdtqy2Q5MwkBUBZdC5Q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2/src/main/resources/com",
-    "last_opened_file_path": "C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2.1/CA2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2/src/main/resources/com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2.1/CA2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ca2.HelloApplication" />
@@ -100,6 +110,7 @@
       <workItem from="1701963412196" duration="652000" />
       <workItem from="1701964325264" duration="42000" />
       <workItem from="1701964508482" duration="30000" />
+      <workItem from="1701964735541" duration="9112000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
