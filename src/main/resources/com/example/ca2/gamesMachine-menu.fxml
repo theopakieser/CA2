@@ -44,20 +44,23 @@
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="name1" layoutX="53.0" layoutY="49.0" promptText="Enter Name" />
-                        <Button layoutX="272.0" layoutY="315.0" mnemonicParsing="false" onAction="#onEditGameMachineClicked" text="Edit" />
-                        <TextField fx:id="manufacturer1" layoutX="53.0" layoutY="117.0" promptText="Enter Manufacturer" />
-                        <TextField fx:id="description1" layoutX="53.0" layoutY="82.0" promptText="Enter Description" />
-                        <TextField fx:id="media1" layoutX="53.0" layoutY="221.0" promptText="Enter Media" />
-                        <TextField fx:id="initialPrice1" layoutX="53.0" layoutY="255.0" promptText="Enter Initial Price" />
-                        <TextField fx:id="yearOfRelease1" layoutX="53.0" layoutY="151.0" promptText="Enter Year Of Release" />
-                        <TextField fx:id="type1" layoutX="53.0" layoutY="186.0" promptText="Enter Type" />
+                        <TextField fx:id="name1" layoutX="53.0" layoutY="121.0" promptText="Enter Name" />
+                        <Button layoutX="263.0" layoutY="331.0" mnemonicParsing="false" onAction="#onEditGameMachineClicked" text="Edit" />
+                        <TextField fx:id="manufacturer1" layoutX="53.0" layoutY="173.0" promptText="Enter Manufacturer" />
+                        <TextField fx:id="description1" layoutX="53.0" layoutY="147.0" promptText="Enter Description" />
+                        <TextField fx:id="media1" layoutX="53.0" layoutY="253.0" promptText="Enter Media" />
+                        <TextField fx:id="initialPrice1" layoutX="53.0" layoutY="279.0" promptText="Enter Initial Price" />
+                        <TextField fx:id="yearOfRelease1" layoutX="53.0" layoutY="201.0" promptText="Enter Year Of Release" />
+                        <TextField fx:id="type1" layoutX="53.0" layoutY="227.0" promptText="Enter Type" />
                         <Text layoutX="245.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit a GameMachine in the System" wrappingWidth="300.74493408203125">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="url1" layoutX="53.0" layoutY="289.0" promptText="Enter Url" />
+                        <TextField fx:id="url1" layoutX="53.0" layoutY="305.0" promptText="Enter Url" />
+                        <TextField fx:id="SelectedGameMachine" layoutX="54.0" layoutY="13.0" promptText="Enter Selected GameMachine" />
+                        <Button layoutX="103.0" layoutY="53.0" mnemonicParsing="false" onAction="#onSelectedGameMachineClicked" text="Select" />
+                        <TextArea fx:id="ViewSelectedGameMachine" layoutX="263.0" layoutY="49.0" prefHeight="58.0" prefWidth="228.0" />
                      </children></AnchorPane>
                         
                     </content>

@@ -1,19 +1,16 @@
 package com.example.ca2;
 
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.ListView;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.Hashtable;
-import java.util.Scanner;
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.DomDriver;
 
 public class HelloApplication extends Application {
-
     static HahaList<Game> games = new HahaList<>();
     static HahaList<GamesMachine> gameMachines = new HahaList<>();
 

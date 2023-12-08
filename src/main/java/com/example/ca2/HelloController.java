@@ -8,12 +8,11 @@ import javafx.application.Platform;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.scene.control.ListView;
 
 import java.io.IOException;
-import com.example.ca2.Game;
 
 public class HelloController {
+
     @FXML
     private Label welcomeText;
      @FXML
@@ -73,6 +72,8 @@ public class HelloController {
     public TextField initialPrice;
     public TextField type;
 
+    public TextField SelectedGameMachine;
+
 
 
 
@@ -96,6 +97,7 @@ public class HelloController {
 
     @FXML
     private TextArea myGameMachines;
+
     @FXML
     protected void onViewGameMachineClicked() throws IOException{
         HahaList.HahaNode temp = HelloApplication.gameMachines.head;
@@ -108,14 +110,68 @@ public class HelloController {
     }
 
     @FXML
-    protected void onEditGameMachineClicked() throws IOException{
-        String yearOfReleasage = yearOfRelease.getText();
-        String initialPricage = initialPrice.getText();
-        int InitialPricage = Integer.parseInt(initialPricage);
-        int YearOfReleasage = Integer.parseInt(yearOfReleasage);
-        GamesMachine editedGameMachine = new GamesMachine(name.getText(), description.getText(), manufacturer.getText(), YearOfReleasage, type.getText(), media.getText(), InitialPricage, url.getText());
-        HelloApplication.gameMachines.editElement(editedGameMachine);
-        System.out.println(editedGameMachine.toString());
+    protected void onEditGameMachineClicked() throws IOException {
+        HahaList<GamesMachine>.HahaNode<GamesMachine> temp = HelloApplication.gameMachines.head;
+        while (temp != null) {
+            if (temp.getContents().getName().equals(SelectedGameMachine.getText())){
+                String yearOfReleasage = yearOfRelease1.getText();
+                String initialPricage = initialPrice1.getText();
+                int InitialPricage = Integer.parseInt(initialPricage);
+                int YearOfReleasage = Integer.parseInt(yearOfReleasage);
+                GamesMachine editedGameMachine = new GamesMachine(name1.getText(), description1.getText(), manufacturer1.getText(), YearOfReleasage, type1.getText(), media1.getText(), InitialPricage, url1.getText());
+                HelloApplication.gameMachines.editElement(editedGameMachine);
+                temp.setContents(editedGameMachine);
+                System.out.println(editedGameMachine.toString());
+                return;
+            } else {
+                temp = temp.next;
+            }
+        }
     }
 
+    @FXML
+    protected void onSelectedGameMachineClicked(){
+        HahaList<GamesMachine>.HahaNode<GamesMachine> selectedGameMachine = HelloApplication.gameMachines.head;
+        while(selectedGameMachine != null){
+            if(selectedGameMachine.getContents().getName().equals(SelectedGameMachine.getText())){
+                ViewSelectedGameMachine.setText(selectedGameMachine.toString());
+                System.out.println("selectedGameMachine: " + selectedGameMachine.getContents() + " has been found");
+                return;
+            } else {
+                selectedGameMachine = selectedGameMachine.next;
+            }
+        }
+        System.out.println("Not found GG");
+    }
+
+//    @FXML
+//    protected HahaList<GamesMachine>.HahaNode<GamesMachine> onSelectedGameMachineClicked() {
+//        HahaList<GamesMachine>.HahaNode<GamesMachine> selectedGameMachine = HelloApplication.gameMachines.head;
+//
+//        while (selectedGameMachine != null) {
+//            if (selectedGameMachine.getContents().getName().equals(SelectedGameMachine.getText())) {
+//                ViewSelectedGameMachine.setText(selectedGameMachine.toString());
+//                System.out.println("selectedGameMachine: " + selectedGameMachine.getContents() + " has been found");
+//                return selectedGameMachine;
+//            } else {
+//                selectedGameMachine = selectedGameMachine.next;
+//            }
+//        }
+//
+//        System.out.println("Not found GG");
+//        return null;
+//    }
+
+
+    public TextField name1;
+    public TextField manufacturer1;
+    public TextField description1;
+    public TextField media1;
+    public TextField initialPrice1;
+    public TextField yearOfRelease1;
+    public TextField type1;
+    public TextField url1;
+    public TextArea ViewSelectedGameMachine;
+
 }
+
