@@ -1,6 +1,6 @@
 package com.example.ca2;
 
-public class Game {
+public class Game { //the game class
     private String name;
     private String publisher;
     private String description;
