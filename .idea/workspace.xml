@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="HashTableLP :)">
-      <change afterPath="$PROJECT_DIR$/lib/xstream-1.4.17 (2).jar" afterDir="false" />
+    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="save and load methods in HelloApplication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +119,7 @@
       <workItem from="1701964325264" duration="42000" />
       <workItem from="1701964508482" duration="30000" />
       <workItem from="1701964735541" duration="9837000" />
-      <workItem from="1702047583705" duration="1341000" />
+      <workItem from="1702047583705" duration="2936000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -194,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702047249961</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="save and load methods in HelloApplication">
+      <created>1702049369334</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702049369334</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +226,7 @@
     <MESSAGE value="fx interface for add" />
     <MESSAGE value="imported a textfield class" />
     <MESSAGE value="HashTableLP :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashTableLP :)" />
+    <MESSAGE value="save and load methods in HelloApplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="save and load methods in HelloApplication" />
   </component>
 </project>
