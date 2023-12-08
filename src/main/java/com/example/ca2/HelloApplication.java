@@ -13,7 +13,7 @@ public class HelloApplication extends Application {
 
     static HahaList<Game> games = new HahaList<>();
     static HahaList<GamesMachine> gameMachines = new HahaList<>();
-    static HahaHashCuckoo<Game> gameHahaHashCuckoo = new HahaHashCuckoo<>(20);
+
 
 
     @Override
@@ -26,7 +26,7 @@ public class HelloApplication extends Application {
         }
 
         public static void main (String[]args){
-            gameHahaHashCuckoo.displayHashTable();
+
             launch();
         }
     }

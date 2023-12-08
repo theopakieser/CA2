@@ -1,5 +1,7 @@
 package com.example.ca2;
 
+import java.util.Hashtable;
+
 public class HahaList<H> {
     public HahaNode<H> head = null;
 
@@ -8,6 +10,7 @@ public class HahaList<H> {
         hn.setContents(e);
         hn.next = head;
         head = hn;
+
     }
 
     public void listElements() {
