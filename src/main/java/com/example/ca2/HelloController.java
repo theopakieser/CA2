@@ -13,6 +13,8 @@ import java.io.IOException;
 
 public class HelloController {
 
+    public TextField SelectedGameMachineForDeletion;
+    public TextArea ViewSelectedGameMachineForDeletion;
     @FXML
     private Label welcomeText;
      @FXML
@@ -142,6 +144,42 @@ public class HelloController {
             }
         }
         System.out.println("Not found GG");
+    }
+
+
+    @FXML
+    protected void onSelectedGameMachineForDeletionClicked(){
+        HahaList<GamesMachine>.HahaNode<GamesMachine> selectedGameMachineForDeletion = HelloApplication.gameMachines.head;
+        while(selectedGameMachineForDeletion != null){
+            if(selectedGameMachineForDeletion.getContents().getName().equals(SelectedGameMachineForDeletion.getText())){
+                ViewSelectedGameMachineForDeletion.setText(selectedGameMachineForDeletion.toString());
+                System.out.println("selectedGameMachine: " + selectedGameMachineForDeletion.getContents() + " has been found");
+                return;
+            } else {
+                selectedGameMachineForDeletion = selectedGameMachineForDeletion.next;
+            }
+        }
+        System.out.println("Not found GG");
+    }
+    @FXML
+    protected void onDeleteGameMachineClicked(){
+        System.out.println("Selected machine to delete: " + SelectedGameMachineForDeletion.getText());
+
+
+        HahaList<GamesMachine>.HahaNode<GamesMachine> selectedGameMachineForDeletion = HelloApplication.gameMachines.head;
+        HahaList<GamesMachine>.HahaNode<GamesMachine> previousGameMachine = null;
+        while (selectedGameMachineForDeletion != null && selectedGameMachineForDeletion.next != null){
+            previousGameMachine = selectedGameMachineForDeletion;
+            selectedGameMachineForDeletion = selectedGameMachineForDeletion.next;
+
+            if(selectedGameMachineForDeletion.getContents().getName().equals(SelectedGameMachineForDeletion.getText())){
+                previousGameMachine.next=selectedGameMachineForDeletion.next;
+                System.out.println("It has been Deleted :)");
+                return;
+            } else {
+                selectedGameMachineForDeletion = selectedGameMachineForDeletion.next;
+            }
+        }
     }
 
 //    @FXML
