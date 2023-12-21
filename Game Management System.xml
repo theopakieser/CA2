@@ -1,0 +1,8 @@
+<object-stream>
+  <java-class>com.example.ca2.GamesMachine</java-class>
+  <java-class>com.example.ca2.Game</java-class>
+  <java-class>com.example.ca2.GamePort</java-class>
+  <java-class>com.example.ca2.HahaList</java-class>
+  <java-class>com.example.ca2.HahaList$HahaNode</java-class>
+  <java-class>com.example.ca2.HashTableLP</java-class>
+</object-stream>

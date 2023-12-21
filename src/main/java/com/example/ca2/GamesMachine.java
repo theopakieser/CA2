@@ -88,9 +88,6 @@ private int initialPrice;
         this.initialPrice = initialPrice;
         this.url = url;
     }
-
-
-
     @Override
     public String toString() {
         return "GamesMachine{" +
@@ -105,5 +102,3 @@ private int initialPrice;
                 '}';
     }
 }
-
-
