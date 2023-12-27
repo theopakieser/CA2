@@ -98,6 +98,26 @@ public class GamePortController {
         System.out.println("Not found GG");
     }
 
+    @FXML
+    protected void onSelectedGamePortClicked() {
+        HahaList<GamePort>.HahaNode<GamePort> selectedGamePort = HelloApplication.gamePorts.head;
+
+        while (selectedGamePort != null) {
+
+            if (selectedGamePort.getContents() != null &&
+                    selectedGamePort.getContents().getOriginalGame().equals(OriginalGame.getText())) {
+
+                ViewSelectedGameMachine.setText(selectedGamePort.toString());
+                System.out.println("Selected game machine found: " + selectedGamePort.getContents());
+                return;
+            } else {
+                selectedGamePort = selectedGamePort.next;
+            }
+        }
+
+        System.out.println("Not found GG");
+    }
+
         @FXML
         protected void onViewGamePortClicked() throws IOException {
             HahaList.HahaNode temp = HelloApplication.gamePorts.head;
@@ -106,15 +126,15 @@ public class GamePortController {
                 GamePorts.append(temp.toString()).append("\n"); // append makes the Stringbuilder exist via toString then uses the \n to new line after each
                 temp = temp.next;
             }
-            myGames.setText(GamePorts.toString());
+            myGamePorts.setText(GamePorts.toString());
         }
 
         @FXML
         protected void onSelectedGamePortForDeletionClicked() {
             HahaList<GamePort>.HahaNode<GamePort> selectedGamePortForDeletion = HelloApplication.gamePorts.head;
             while (selectedGamePortForDeletion != null) {
-                if (selectedGamePortForDeletion.getContents().getOriginalGame().equals(SelectedGamePortForDeletion.getText())) {
-                    ViewSelectedGameForDeletion.setText(selectedGamePortForDeletion.toString());
+                if (selectedGamePortForDeletion.getContents().getOriginalGame().getName().equals(SelectedGamePortForDeletion.getText())) {
+                    ViewSelectedGamePortForDeletion.setText(selectedGamePortForDeletion.toString());
                     System.out.println("selectedGame: " + selectedGamePortForDeletion.getContents() + " has been found");
                     return;
                 } else {
@@ -124,13 +144,29 @@ public class GamePortController {
             System.out.println("Not found GG");
         }
 
-        @FXML
-        protected void onDeleteGameClicked() {
+//    @FXML
+//    protected void onSelectedGameForDeletionClicked() {
+//        HahaList<Game>.HahaNode<Game> selectedGameForDeletion = HelloApplication.games.head;
+//        while (selectedGameForDeletion != null) {
+//            if (selectedGameForDeletion.getContents().getName().equals(SelectedGameForDeletion.getText())) {
+//                ViewSelectedGameForDeletion.setText(selectedGameForDeletion.toString());
+//                System.out.println("selectedGame: " + selectedGameForDeletion.getContents() + " has been found");
+//                return;
+//            } else {
+//                selectedGameForDeletion = selectedGameForDeletion.next;
+//            }
+//        }
+//        System.out.println("Not found GG");
+//    }
+
+
+    @FXML
+        protected void onDeleteGamePortClicked() {
             System.out.println("Selected machine to delete: " + SelectedGamePortForDeletion.getText());
             HahaList<GamePort>.HahaNode<GamePort> selectedGamePortForDeletion = HelloApplication.gamePorts.head;
             HahaList<GamePort>.HahaNode<GamePort> previousGamePort = null;
             while (selectedGamePortForDeletion != null) {
-                if (selectedGamePortForDeletion.getContents().getOriginalGame().equals(SelectedGameForDeletion.getText())) {
+                if (selectedGamePortForDeletion.getContents().getOriginalGame().getName().equals(SelectedGamePortForDeletion.getText())) {
                     if (previousGamePort == null) {
                         HelloApplication.gamePorts.head = selectedGamePortForDeletion.next;
                     } else {
@@ -204,4 +240,6 @@ public class GamePortController {
         public TextArea ViewNewGameMachine;
         public TextField OriginalGame;
         public TextField SelectedGamePortForDeletion;
+        public TextArea myGamePorts;
+        public TextArea ViewSelectedGamePortForDeletion;
 }

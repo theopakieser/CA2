@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="imported a textfield class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/GamePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/GamePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/GamePortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/GamePortController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/gh.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/gh.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
