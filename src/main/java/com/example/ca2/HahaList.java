@@ -48,6 +48,17 @@ public void editGM(GamesMachine editGameMachine){
         }
     }
 
+    public void editGP(GamePort editGamePort){
+        HahaList<GamePort>.HahaNode<GamePort> temp = HelloApplication.gamePorts.head;
+        while(temp !=null) {
+            if (temp.getContents().getOriginalGame().equals(editGamePort.getOriginalGame())) {
+                temp.setContents(editGamePort);
+            } else {
+                temp = temp.next;
+            }
+        }
+    }
+
 
 
 

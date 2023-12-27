@@ -58,7 +58,6 @@ public class GamePort {
         this.yearOfRelease = yearOfRelease;
         this.url = url;
     }
-   public String name = originalGame.getName();
 
     @Override
     public String toString() {
@@ -69,7 +68,6 @@ public class GamePort {
                 ", developer='" + developer + '\'' +
                 ", yearOfRelease=" + yearOfRelease +
                 ", url='" + url + '\'' +
-                ", name=" + name +
                 '}';
     }
 }

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.ca2.GamePortController" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="ADD">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="addGamePortNewGameMachine" layoutX="34.0" layoutY="30.0" promptText="Enter New GM" />
+                                <Button layoutX="89.0" layoutY="193.0" mnemonicParsing="false" onAction="#onAddGamePortClicked" text="Add" />
+                                <TextField fx:id="addGamePortOriginalGame" layoutX="34.0" layoutY="63.0" promptText="Enter Original Game" />
+                                <TextField fx:id="addGamePortDeveloper" layoutX="34.0" layoutY="96.0" promptText="Enter Developer" />
+                                <TextField fx:id="addGamePortYearOfRelease" layoutX="34.0" layoutY="128.0" promptText="Enter Year Of Release" />
+                                <TextField fx:id="addGamePortUrl" layoutX="34.0" layoutY="160.0" promptText="Enter Url" />
+                                <Text layoutX="8.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a GamePort to the System" wrappingWidth="267.14495849609375">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <TextArea fx:id="ViewNewGameMachine" layoutX="276.0" layoutY="2.0" prefHeight="107.0" prefWidth="298.0" />
+                                <Button layoutX="390.0" layoutY="135.0" mnemonicParsing="false" onAction="#onSelectedGameMachineClicked" text="Select GM" />
+                                <TextField fx:id="NewGameMachine" layoutX="350.0" layoutY="109.0" />
+                                <TextArea fx:id="ViewOriginalGame" layoutX="276.0" layoutY="165.0" prefHeight="107.0" prefWidth="298.0" />
+                                <TextField fx:id="OriginalGame" layoutX="350.0" layoutY="272.0" />
+                                <Button layoutX="383.0" layoutY="298.0" mnemonicParsing="false" onAction="#onSelectedGameClicked" text="Select Game" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="DEL">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="SelectedGamePortForDeletion" layoutX="36.0" layoutY="14.0" promptText="Enter Selected GM name" />
+                                <TextArea fx:id="ViewSelectedGameForDeletion" layoutX="242.0" layoutY="7.0" prefHeight="82.0" prefWidth="342.0" />
+                                <Button layoutX="85.0" layoutY="64.0" mnemonicParsing="false" onAction="#onSelectedGamePortForDeletionClicked" text="Select" />
+                                <Button layoutX="85.0" layoutY="210.0" mnemonicParsing="false" onAction="#onDeleteGameClicked" text="Delete" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="EDIT">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="editGameName" layoutX="54.0" layoutY="36.0" promptText="Enter Name" />
+                                <Button layoutX="108.0" layoutY="325.0" mnemonicParsing="false" onAction="#onEditGamePortClicked" text="Edit" />
+                                <TextField fx:id="editGameDescription" layoutX="53.0" layoutY="94.0" promptText="Enter Description" />
+                                <TextField fx:id="editGamePublisher" layoutX="53.0" layoutY="65.0" promptText="Enter Publisher" />
+                                <TextField fx:id="editGameYearOfRelease" layoutX="52.0" layoutY="273.0" promptText="Enter Year of Release" />
+                                <TextField fx:id="editGameDeveloper" layoutX="54.0" layoutY="121.0" promptText="Enter Developer" />
+                                <TextField fx:id="editGameOriginalGameMachine" layoutX="51.0" layoutY="221.0" promptText="Enter Original GM" />
+                                <Text layoutX="245.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit a GameMachine in the System" wrappingWidth="300.74493408203125">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Text>
+                                <TextField fx:id="editGameUrl" layoutX="54.0" layoutY="299.0" promptText="Enter Url" />
+                                <TextField fx:id="SelectedGame" layoutX="302.0" layoutY="121.0" promptText="Enter Selected GameMachine" />
+                                <Button layoutX="353.0" layoutY="173.0" mnemonicParsing="false" onAction="#onSelectedGameMachineClicked" text="Select" />
+                                <TextArea fx:id="ViewSelectedGameMachine" layoutX="263.0" layoutY="48.0" prefHeight="58.0" prefWidth="228.0" />
+                                <Button layoutX="102.0" layoutY="247.0" mnemonicParsing="false" onAction="#onSelectedGameMachineClicked" text="Select" />
+                                <TextArea fx:id="ViewSelectedGameMachine1" layoutX="15.0" layoutY="156.0" prefHeight="58.0" prefWidth="228.0" />
+                            </children></AnchorPane>
+
+                    </content>
+                </Tab>
+                <Tab text="VIEW">
+                    <content>
+
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextArea fx:id="myGames" prefHeight="286.0" prefWidth="600.0" />
+                                <Button layoutX="274.0" layoutY="296.0" mnemonicParsing="false" onAction="#onViewGamePortClicked" text="View All" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+
+</AnchorPane>

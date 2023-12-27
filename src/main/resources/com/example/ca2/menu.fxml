@@ -10,7 +10,7 @@
       <Label fx:id="exitText" />
       <Button layoutX="282.0" layoutY="323.0" mnemonicParsing="false" onAction="#onExitClicked" text="Exit" />
       <Button layoutX="274.0" layoutY="67.0" mnemonicParsing="false" onAction="#onGamesClicked" text="Games" />
-      <Button layoutX="469.0" layoutY="67.0" mnemonicParsing="false" text="GamePorts" />
+      <Button layoutX="469.0" layoutY="67.0" mnemonicParsing="false" onAction="#onGamesPortClicked" text="GamePorts" />
       <Button layoutX="183.0" layoutY="175.0" mnemonicParsing="false" onAction="#onSaveClicked" text="Save" />
       <Button layoutX="377.0" layoutY="175.0" mnemonicParsing="false" onAction="#onLoadClicked" text="Load" />
    </children>

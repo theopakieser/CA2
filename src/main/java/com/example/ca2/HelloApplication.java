@@ -12,7 +12,7 @@ import java.io.*;
 public class HelloApplication extends Application {
     static HahaList<Game> games = new HahaList<>();
     static HahaList<GamesMachine> gameMachines = new HahaList<>();
-    
+    static HahaList<GamePort> gamePorts = new HahaList<>();
 
 
 

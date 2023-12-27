@@ -145,7 +145,7 @@ public class GameController {
                                 YearOfRelease,
                                 editGameUrl.getText()
                         );
-                        HelloApplication.gameMachines.editG(editedGame);
+                        HelloApplication.games.editG(editedGame);
                         temp.setContents(editedGame);
                         System.out.println(editedGame.toString());
                         return;
