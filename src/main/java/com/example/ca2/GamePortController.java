@@ -19,7 +19,6 @@ public class GamePortController {
 
         @FXML
         protected void onAddGamePortClicked() throws IOException {
-            //TODO figure out how to change original game machine to a string
             HahaList<GamesMachine>.HahaNode<GamesMachine> newGameMachine = HelloApplication.gameMachines.head; //create new GameMachine
 
             while (newGameMachine != null) {

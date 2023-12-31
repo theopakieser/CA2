@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
+    //TODO 3/6 tests done
 private Game g1, g2, g3, g4;
     @BeforeEach
     void setUp() {

@@ -20,7 +20,6 @@ public class GameController {
 
     @FXML
     protected void onAddGameClicked() throws IOException {
-        //TODO figure out how to change original game machine to a string
         HahaList<GamesMachine>.HahaNode<GamesMachine> originalGameMachine = HelloApplication.gameMachines.head; //create new GameMachine
 
         while (originalGameMachine != null) {

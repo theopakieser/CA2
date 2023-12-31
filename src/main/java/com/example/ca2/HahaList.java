@@ -13,6 +13,7 @@ public class HahaList<H> {
 
     }
 
+
     public void listElements() {
         HahaNode<H> temp;
          temp=head;
@@ -23,9 +24,17 @@ public class HahaList<H> {
         }
     }
 
-public void SelectElement(){
+    public int size(){
+        int size =0;
+        HahaList.HahaNode current = head;
+        while (current!=null){
+            size++;
+            current=current.next
+        }
+        return size;
+    }
 
-}
+
 
 public void editGM(GamesMachine editGameMachine){
     HahaList<GamesMachine>.HahaNode<GamesMachine> temp = HelloApplication.gameMachines.head;
@@ -58,8 +67,6 @@ public void editGM(GamesMachine editGameMachine){
             }
         }
     }
-
-
 
 
 
