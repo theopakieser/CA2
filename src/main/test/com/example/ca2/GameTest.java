@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
-    //TODO 3/6 tests done
 private Game g1, g2, g3, g4;
     @BeforeEach
     void setUp() {
@@ -27,7 +26,7 @@ private Game g1, g2, g3, g4;
         assertEquals("Minecraft", g1.getName());
         assertEquals("Sleepy Ape", g2.getPublisher());
         assertEquals("Pew pew shooty game", g3.getDescription());
-        assertEquals("some fucking soccer obseesed twat", g4.getDeveloper());
+        assertEquals("some fucking soccer obsessed twat", g4.getDeveloper());
         assertEquals(null, g1.getOriginalMachine());
         assertEquals(2003, g2.getYearOfRelease());
         assertEquals("qwefsi", g3.getUrl());

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HahaListTest {
 
-    //TODO 4/6 tests done
+    //TODO 4/6 tests done!
 
     public HahaList<Game> gamesList, gamesListEmpty;
     public HahaList<GamePort> gpList, gpListEmpty;
