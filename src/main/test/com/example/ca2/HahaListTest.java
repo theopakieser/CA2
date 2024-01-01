@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HahaListTest {
 
-    //TODO 4/6 tests done!
+    //TODO 4/6 tests done - need you to explain how the edit methods work to do tests on those cause i dont really get it
 
     public HahaList<Game> gamesList, gamesListEmpty;
     public HahaList<GamePort> gpList, gpListEmpty;
@@ -41,6 +41,7 @@ class HahaListTest {
         gamesList.addElement(g1);
         gmList.addElement(gm1);
         gpList.addElement(gp1);
+        gpList.addElement(gp2);
 
     }
 
@@ -71,13 +72,14 @@ class HahaListTest {
         gmList.addElement(gm3);
         assertEquals(2, gmList.size());
 
-        assertEquals(1, gpList.size());
-        gpList.addElement(gp3);
         assertEquals(2, gpList.size());
+        gpList.addElement(gp3);
+        assertEquals(3, gpList.size());
     }
 
     @Test
     void editGames(){
+
 
     }
 
