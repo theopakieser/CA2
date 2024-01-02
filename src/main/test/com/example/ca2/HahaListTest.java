@@ -23,8 +23,8 @@ class HahaListTest {
         gamesList= new HahaList<>();
         gamesListEmpty= new HahaList<>();
         g1 = new Game("Minecraft", "Mirosoft", "Haha funny block game", "Your mom", null, 1991, "qirnqio");
-        g2 = new Game("Stardew Valley", "Sleepy Ape", "Cosy Farming Sim", "Your da", null, 2003, "asdfghjkl");
-        g3 = new Game("Call Of Duty", "Some cunt", "Pew pew shooty game", "your brother's dog", null, 2024, "qwefsi");
+        g2 = new Game("Stardew Valley", "Sleepy Ape", "Cosy Farming Sim", "Your da", null, 2023, "asdfghjkl");
+        g3 = new Game("Call Of Duty", "Some cunt", "Pew pew shooty game", "your brother's dog", null, 2002, "qwefsi");
 
         gmList=new HahaList<>();
         gmListEmpty=new HahaList<>();
@@ -62,7 +62,7 @@ class HahaListTest {
         assertEquals(1, gamesListEmpty.size());
 
         assertEquals(0, gmListEmpty.size());
-        gmList.addElement(gm2);
+        gmListEmpty.addElement(gm2);
         assertEquals(1, gmListEmpty.size());
     }
 
@@ -77,14 +77,20 @@ class HahaListTest {
         assertEquals(3, gpList.size());
     }
 
-    @Test
-    void editGames(){
-
-
+    private boolean isListSortedByYear(HahaList<Game>.HahaNode<Game> head) {
+        while (head != null && head.next != null) {
+            if (head.getContents().getYearOfRelease() < head.next.getContents().getYearOfRelease()) {
+                return false;
+            }
+            head = head.next;
+        }
+        return true;
     }
-
     @Test
-    void editGamesMachine(){
+ void testBubbleSortingByYear(){
+        gamesList.bubbleSortGamesByYear();
+        HahaList<Game>.HahaNode<Game> sortedList = gamesList.getSortedList();
+        assertTrue(isListSortedByYear(sortedList));
 
     }
 

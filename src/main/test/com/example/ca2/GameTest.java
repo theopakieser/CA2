@@ -13,7 +13,7 @@ private Game g1, g2, g3, g4;
         g1 = new Game("Minecraft", "Mirosoft", "Haha funny block game", "Your mom", null, 1991, "qirnqio");
         g2 = new Game("Stardew Valley", "Sleepy Ape", "Cosy Farming Sim", "Your da", null, 2003, "asdfghjkl");
         g3 = new Game("Call Of Duty", "Some cunt", "Pew pew shooty game", "your brother's dog", null, 2024, "qwefsi");
-        g4 = new Game("Fifa 20000000000000000", "EA", "a cex employee's worst nightmare", "some fucking soccer obseesed twat", null, 1982, "daeojfaq");
+        g4 = new Game("Fifa 20000000000000000", "EA", "a cex employee's worst nightmare", "some fucking soccer obsessed twat", null, 1982, "daeojfaq");
     }
 
     @AfterEach
@@ -48,7 +48,7 @@ private Game g1, g2, g3, g4;
         assertEquals("Soccer Game", g4.getDescription());
 
         assertEquals("Your mom", g1.getDeveloper());
-        g1.setDescription("Some bored dude");
+        g1.setDeveloper("Some bored dude");
         assertEquals("Some bored dude", g1.getDeveloper());
     }
 

@@ -99,6 +99,10 @@ public void editGM(GamesMachine editGameMachine){
         }
     }
 
+    public HahaList<Game>.HahaNode<Game> getSortedList() {
+        return HelloApplication.games.head;
+    }
+
     //Add other insertion, deletion, access, search, etc. methods too
 //Inner class approach.
     class HahaNode<N> {

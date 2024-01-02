@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it">
+    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="5/6 tests and bubble sort working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/example/ca2/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/example/ca2/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/example/ca2/HahaListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/example/ca2/HahaListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
       <recent name="com.example.ca2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ca2.HelloApplication" />
       <module name="CA2" />
@@ -103,10 +99,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HahaListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CA2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.ca2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.ca2" />
+      <option name="MAIN_CLASS_NAME" value="com.example.ca2.HahaListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.HahaListTest" />
+        <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +150,7 @@
       <workItem from="1701964508482" duration="30000" />
       <workItem from="1701964735541" duration="9112000" />
       <workItem from="1704135071850" duration="7537000" />
-      <workItem from="1704225716547" duration="5353000" />
+      <workItem from="1704225716547" duration="6089000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -245,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704218646829</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="5/6 tests and bubble sort working">
+      <created>1704231735786</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704231735786</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +295,7 @@
     <MESSAGE value="attempted some bubble sorting, set and get methods need to be written in hahalist to be able to get/set things in game maybe??" />
     <MESSAGE value="two hahalist tests done, (4/6) in total" />
     <MESSAGE value="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it" />
-    <option name="LAST_COMMIT_MESSAGE" value="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it" />
+    <MESSAGE value="5/6 tests and bubble sort working" />
+    <option name="LAST_COMMIT_MESSAGE" value="5/6 tests and bubble sort working" />
   </component>
 </project>
