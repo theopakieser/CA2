@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca2.GameController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ca2.GameController">
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
          <tabs>
@@ -79,8 +79,10 @@
 
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextArea fx:id="myGames" prefHeight="286.0" prefWidth="600.0" />
-                        <Button layoutX="274.0" layoutY="296.0" mnemonicParsing="false" onAction="#onViewGameClicked" text="View All" />
+                        <TextArea fx:id="myGames" layoutX="314.0" prefHeight="286.0" prefWidth="286.0" />
+                        <Button layoutX="428.0" layoutY="296.0" mnemonicParsing="false" onAction="#onViewGameClicked" text="View All" />
+                        <Button layoutX="127.0" layoutY="296.0" mnemonicParsing="false" onAction="#onSortClicked" text="Sort" />
+                        <TextArea fx:id="myGames1" layoutX="22.0" prefHeight="286.0" prefWidth="286.0" />
                      </children>
                   </AnchorPane>
                </content>

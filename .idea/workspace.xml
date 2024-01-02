@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it">
-      <change afterPath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/com/example/ca2/HahaListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/example/ca2/HahaListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ca2/games-menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/example/ca2/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/example/ca2/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
       <recent name="com.example.ca2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.ca2.HelloApplication" />
       <module name="CA2" />
@@ -102,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameTest" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.GameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +137,8 @@
       <workItem from="1701964325264" duration="42000" />
       <workItem from="1701964508482" duration="30000" />
       <workItem from="1701964735541" duration="9112000" />
-      <workItem from="1704135071850" duration="2116000" />
+      <workItem from="1704135071850" duration="7537000" />
+      <workItem from="1704225716547" duration="5353000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -234,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704125310527</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it">
+      <created>1704218646829</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704218646829</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

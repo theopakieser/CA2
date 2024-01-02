@@ -1,6 +1,6 @@
 package com.example.ca2;
 
-public class Game implements Comparable<Game>{ //the game class
+public class Game{ //the game class
     private String name;
     private String publisher;
     private String description;
@@ -93,20 +93,27 @@ public class Game implements Comparable<Game>{ //the game class
                 '}';
     }
 
-    @Override
-    public int compareTo(Game g) {
-        return this.getYearOfRelease()-g.getYearOfRelease(); //compares games based on year of release in asceding order
-    }
+//    @Override
+//    public int compareTo(Game g) {
+//        return this.getYearOfRelease()-g.getYearOfRelease(); //compares games based on year of release in asceding order
+//    }
 
-    public void bubbleSortGames(HahaList<Game> a){
-        for(int b=1;b<a.size();b++){
-            for(int i=0;i<a.size()-b;i++){
-                if(a.get(i).compareTo(a.get(i+1))>0){
-                    Game swap=a.get(i);
-                    a.set(i, a.get(i+1));
-                    a.set(i+1, swap);
-                }
-            }
-        }
-    }
+
+//    public void bubbleSortGamesByYear(HahaList<Game> a){
+//        for(int b=1;b<a.size();b++){
+//            for(int i=0;i<a.size()-b;i++){
+//                if(temp.getContents().getYearOfRelease() > temp.next.getContents().getYearOfRelease() ){
+//                    temp = temp.next;
+//                    temp.next = temp;
+//                }
+//                temp = temp.next;
+//                        get(i).compareTo(a.get(i+1))>0){
+//                    Game swap=a.get(i);
+//                    a.set(i, a.get(i+1));
+//                    a.set(i+1, swap);
+//                }
+//            }
+//        }
+//    }
+
 }

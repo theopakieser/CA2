@@ -1,8 +1,7 @@
 package com.example.ca2;
 
-import java.util.Hashtable;
-
 public class HahaList<H> {
+
     public HahaNode<H>  head = null;
 
     public void addElement(H e) { //Add element to head of list
@@ -68,17 +67,42 @@ public void editGM(GamesMachine editGameMachine){
         }
     }
 
-
-
-
     public void clear() { //Empty list
         head = null;
     }
 
 
+    public void bubbleSortGamesByYear() { // //www.prepbytes.com/blog/linked-list/bubble-sort-for-linked-list-by-swapping-nodes/
+        HahaList<Game>.HahaNode<Game> gameHead =HelloApplication.games.head;
+        if (gameHead != null) {
+            HahaList<Game>.HahaNode<Game> current,newGameHead = null,moveNode, prevNode = null;
+            while (gameHead != null) {//if head isnt null
+                current = gameHead;
+                moveNode = gameHead; //current and moveNode are now the head
+                while (current != null) {//if current isnt null
+                    if (current.next!=null && current.next.getContents().getYearOfRelease()>moveNode.getContents().getYearOfRelease()) {//if current year is bigger than prev year
+                        moveNode=current.next; //swap nodes
+                        prevNode=current;
+                    }
+                    current=current.next; //go next
+                }
+                if (moveNode==gameHead) {//if moved node is the same as the head
+                    gameHead=gameHead.next; //go next
+                }
+                if (prevNode!=null) {//if previous node isnt null
+                    prevNode.next = moveNode.next; //next node is the next node from the moved node
+                }
+                moveNode.next=newGameHead; //the node is the new head
+                newGameHead=moveNode;
+            }
+            gameHead=newGameHead;//make new head
+        }
+    }
+
     //Add other insertion, deletion, access, search, etc. methods too
 //Inner class approach.
     class HahaNode<N> {
+
         HahaNode<N> next = null;
         private N contents; //ADT reference!
 
@@ -90,10 +114,14 @@ public void editGM(GamesMachine editGameMachine){
             contents = c;
         }
 
+
+
         @Override
         public String toString() {
             return contents + " \n";
         }
+
+
     }
 }
 

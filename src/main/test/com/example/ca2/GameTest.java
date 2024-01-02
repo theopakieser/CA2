@@ -39,7 +39,7 @@ private Game g1, g2, g3, g4;
         g2.setName("OverWatch");
         assertEquals("OverWatch", g2.getName());
 
-        assertEquals("Some Cunt", g3.getPublisher());
+        assertEquals("Some cunt", g3.getPublisher());
         g3.setPublisher("A very lovely person");
         assertEquals("A very lovely person", g3.getPublisher());
 

@@ -153,9 +153,16 @@ public class GameController {
                     }
                 }
             }
-
-
         }
+    }
+    @FXML
+    protected void onSortClicked(){
+        HelloApplication.games.bubbleSortGamesByYear();
+      HahaList<Game>.HahaNode<Game> current = HelloApplication.games.head;
+      while(current!=null) {
+          System.out.println(current.getContents());
+          current = current.next;
+      }
     }
     public TextField editGameName;
     public TextField editGamePublisher;
@@ -164,7 +171,7 @@ public class GameController {
     public TextField editGameOriginalGameMachine;
     public TextField editGameYearOfRelease;
     public TextField editGameUrl;
-
+    public TextArea myGames1;
     public TextField OriginalGameMachine;
     public TextArea ViewOriginalMachine;
     public TextArea ViewSelectedGameForDeletion;
