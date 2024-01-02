@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="imported a textfield class">
+    <list default="true" id="70dc04bc-f7fb-4f8c-8a0a-8097bed83041" name="Changes" comment="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it">
       <change afterPath="$PROJECT_DIR$/lib/xstream-1.4.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com/example/ca2/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ca2/HahaList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/example/ca2/HahaListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/com/example/ca2/HahaListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "last_directory_selection": "C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2/src/main/resources/com",
-    "last_opened_file_path": "C:/Users/adamt/Downloads/xstream-1.4.17.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/marty/OneDrive - South East Technological University (Waterford Campus)/Semester 1, Year 2/Data Structures and Algorithms/CA2/src/main/resources/com&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adamt/Downloads/xstream-1.4.17.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\adamt\OneDrive\Data Str CA2\CA2\lib" />
@@ -133,6 +134,7 @@
       <workItem from="1701964325264" duration="42000" />
       <workItem from="1701964508482" duration="30000" />
       <workItem from="1701964735541" duration="9112000" />
+      <workItem from="1704135071850" duration="2116000" />
     </task>
     <task id="LOCAL-00001" summary="new project">
       <created>1699888350917</created>
@@ -197,7 +199,42 @@
       <option name="project" value="LOCAL" />
       <updated>1701954290273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="game test class w/ 3/8 tests">
+      <created>1703885480390</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703885480390</updated>
+    </task>
+    <task id="LOCAL-00011" summary="attempted some bubble sorting, set and get methods need to be written in hahalist to be able to get/set things in game maybe??">
+      <created>1704038278706</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704038278706</updated>
+    </task>
+    <task id="LOCAL-00012" summary="two hahalist tests done, (4/6) in total">
+      <created>1704124291579</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704124291579</updated>
+    </task>
+    <task id="LOCAL-00013" summary="two hahalist tests done, (4/6) in total">
+      <created>1704124315283</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704124315283</updated>
+    </task>
+    <task id="LOCAL-00014" summary="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it">
+      <created>1704125310527</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704125310527</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +261,10 @@
     <MESSAGE value="add" />
     <MESSAGE value="fx interface for add" />
     <MESSAGE value="imported a textfield class" />
-    <option name="LAST_COMMIT_MESSAGE" value="imported a textfield class" />
+    <MESSAGE value="game test class w/ 3/8 tests" />
+    <MESSAGE value="attempted some bubble sorting, set and get methods need to be written in hahalist to be able to get/set things in game maybe??" />
+    <MESSAGE value="two hahalist tests done, (4/6) in total" />
+    <MESSAGE value="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it" />
+    <option name="LAST_COMMIT_MESSAGE" value="4/6 tests, need you to explain how the edit methods work to do tests on those cause i dont really get it" />
   </component>
 </project>

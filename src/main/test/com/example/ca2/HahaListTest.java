@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HahaListTest {
 
-    //TODO 4/6 tests done - need you to explain how the edit methods work to do tests on those cause i dont really get it
+    //TODO 5/6 tests done - need you to explain how the edit methods work to do tests on those cause i dont really get it
 
     public HahaList<Game> gamesList, gamesListEmpty;
     public HahaList<GamePort> gpList, gpListEmpty;

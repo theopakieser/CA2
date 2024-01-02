@@ -29,7 +29,7 @@ public class HahaList<H> {
         HahaList.HahaNode current = head;
         while (current!=null){
             size++;
-            current=current.next
+            current=current.next;
         }
         return size;
     }
